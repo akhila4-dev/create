@@ -1,0 +1,83 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!--boot stap is used to accssess from any device-->
+<div class="jumbotron text-center">
+    <h1>Payroll management system</h1>
+    
+  </div>
+
+  <!DOCTYPE html>
+<html>
+    <head>
+        <title>Payroll management System</title>
+        <style>
+           body{
+  
+  background-color:grey;
+  background-attachment: fixed;
+  background-size: cover;
+}
+        </style>
+            <title>Payroll management System</title>
+            
+
+            <script>
+            var x = document.getElementById("demo");
+            
+            function getLocation() {
+              if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+              } else { 
+                x.innerHTML = "Geolocation is not supported by this"
+            }
+            }
+            
+            function showPosition(position) {
+              x.innerHTML = "Latitude: " + position.coords.latitude + 
+              "<br>Longitude: " + position.coords.longitude;
+            }
+            </script>
+            <link rel="stylesheet" href="mystyle.css">
+            
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="employee.html">Employee</a>
+            <a href="payslip.html">Payslip generation</a>
+            <a href="contactus.html">Contact us</a>
+            <br><p id="demo"><a href=""><img onclick="getLocation();" src="cts.jpg" height="200px" width="200px"  ></a>
+            </p>
+            </div> 
+          <div class="home">
+    <p id="p1">
+        <p style="background-color:tomato;">A payroll management system is a tool - predominantly a software program - 
+            that enables your business to handle all your employee's financial records 
+            in a has in a hassle-free, automated fashion.</p>
+    
+    </p>
+        <p id="p2">
+            <p style="background-color:yellowgreen;">This includes employee's salaries, bonuses, deductions, net pay, 
+                and generation of pay-slips for a specific period.</p>
+
+        </p>
+<button onclick="getLocation();">Get location</button>
+    </div>
+    </body>
+    <form>
+        <input type="text" name="fname" placeholder="your name">enter your name</input>
+        <input type="button" name="submit" placeholder="submit"></input>
+    </form>
+    <footer>
+
+    </footer>
+</html>
